@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MaterialNavigationView">
+        <attr name="itemStyle" format="enum">
+            <enum name="default_style" value="1" />
+            <enum name="rounded_right" value="2" />
+            <enum name="rounded_rectangle" value="3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

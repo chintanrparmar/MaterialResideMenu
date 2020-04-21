@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_headlines">
+
+    <fragment
+        android:id="@+id/nav_headlines"
+        android:name="com.crp.materialresidemenu.ui.home.HomeFragment"
+        android:label="@string/headlines"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="com.crp.materialresidemenu.ui.gallery.GalleryFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.crp.materialresidemenu.ui.slideshow.SlideshowFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
