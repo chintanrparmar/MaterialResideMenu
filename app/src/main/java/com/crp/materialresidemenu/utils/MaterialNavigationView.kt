@@ -1,4 +1,4 @@
-package com.crp.materialresidemenu
+package com.crp.materialresidemenu.utils
 
 
 
@@ -9,6 +9,7 @@ import android.util.AttributeSet
 import android.util.Log
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.graphics.drawable.DrawableCompat
+import com.crp.materialresidemenu.R
 import com.google.android.material.navigation.NavigationView
 
 /**
@@ -21,7 +22,8 @@ class MaterialNavigationView @JvmOverloads constructor(
     defStyleAttr: Int = R.style.Widget_NavigationView
 ) : NavigationView(context, attrs, defStyleAttr) {
 
-    private var itemStyle: Int = ITEM_STYLE_DEFAULT
+    private var itemStyle: Int =
+        ITEM_STYLE_DEFAULT
 
     init {
         // Init itemStyle
@@ -81,7 +83,8 @@ class MaterialNavigationView @JvmOverloads constructor(
         var background = AppCompatResources.getDrawable(context, resource)
         if (background != null) {
             val tint = AppCompatResources.getColorStateList(
-                context, R.color.navigation_item_background_tint
+                context,
+                R.color.navigation_item_background_tint
             )
 
             background = DrawableCompat.wrap(background.mutate())

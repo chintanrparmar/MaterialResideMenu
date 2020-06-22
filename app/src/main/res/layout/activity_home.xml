@@ -15,7 +15,7 @@
         android:layout_height="match_parent" />
 
 
-    <com.crp.materialresidemenu.MaterialNavigationView
+    <com.crp.materialresidemenu.utils.MaterialNavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
