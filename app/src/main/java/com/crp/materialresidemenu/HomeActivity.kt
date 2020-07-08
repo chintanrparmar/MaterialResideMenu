@@ -64,7 +64,7 @@ class HomeActivity : AppCompatActivity() {
                     val scaleFactor = 6f
                     contentLayout.scaleX = 1 - slideOffset / scaleFactor
                     contentLayout.scaleY = 1 - slideOffset / scaleFactor
-
+                    contentLayout.elevation = 50f
                 }
             }
         drawerLayout.setScrimColor(Color.TRANSPARENT)
