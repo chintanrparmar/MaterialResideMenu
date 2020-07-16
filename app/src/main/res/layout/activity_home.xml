@@ -17,16 +17,16 @@
 
     <com.crp.materialresidemenu.utils.MaterialNavigationView
         android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
+        android:layout_width="260dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@color/colorPrimary"
         android:theme="@style/Widget.NavigationView.RippleEffect"
         app:headerLayout="@layout/nav_header_home"
         app:insetForeground="@android:color/transparent"
         app:itemIconTint="@color/navigation_item_tint"
         app:itemStyle="rounded_right"
         app:itemTextAppearance="@style/TextViewStyle"
-        android:background="@color/colorPrimary"
         app:itemTextColor="@color/navigation_item_tint"
         app:menu="@menu/activity_home_drawer" />
 

@@ -16,10 +16,12 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
+import com.crp.materialresidemenu.utils.DrawerContent
 
 class HomeActivity : AppCompatActivity() {
 
@@ -34,9 +36,12 @@ class HomeActivity : AppCompatActivity() {
 
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val contentLayout: CoordinatorLayout = findViewById(R.id.contentLayout)
+        val contentLayout: DrawerContent = findViewById(R.id.contentLayout)
         val navView: NavigationView = findViewById(R.id.nav_view)
-        customDrawer(drawerLayout, contentLayout)
+
+
+        drawerLayout.setScrimColor(ContextCompat.getColor(this,android.R.color.transparent))
+        drawerLayout.drawerElevation = 0f
 
 
         val navController = findNavController(R.id.nav_host_fragment)
@@ -52,29 +57,6 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
-    private fun customDrawer(drawerLayout: DrawerLayout, contentLayout: CoordinatorLayout) {
-
-        val actionBarDrawerToggle: ActionBarDrawerToggle =
-            object : ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close) {
-
-                override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
-                    super.onDrawerSlide(drawerView, slideOffset)
-                    val slideX = drawerView.width * slideOffset
-                    contentLayout.translationX = slideX
-                    val scaleFactor = 6f
-                    contentLayout.scaleX = 1 - slideOffset / scaleFactor
-                    contentLayout.scaleY = 1 - slideOffset / scaleFactor
-                    contentLayout.elevation = 50f
-                }
-            }
-        drawerLayout.setScrimColor(Color.TRANSPARENT)
-        drawerLayout.drawerElevation = 0f
-        drawerLayout.addDrawerListener(actionBarDrawerToggle)
-
-
-    }
-
-
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.home, menu)
@@ -85,4 +67,5 @@ class HomeActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }
