@@ -14,6 +14,9 @@ It uses [Motion Layout](https://developer.android.com/training/constraint-layout
 -   [Material Components for Android](https://github.com/material-components/material-components-android)  - Modular and customizable Material Design UI components for Android.## Switch to another file
 
 
+## Update
+The 'master' branch uses Motion Layout for the transition effect, to do it programatically switch to 'with_kotlin_programatically' branch.
+
 
 ## Contact
 If you need any help, feel free to connect.
