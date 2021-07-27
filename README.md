@@ -11,7 +11,7 @@ It uses [Motion Layout](https://developer.android.com/training/constraint-layout
 
 -   [Kotlin](https://kotlinlang.org/)  - First class and official programming language for Android development.
 -   [Jetpack's Navigation component](https://developer.android.com/guide/navigation)  - The one-stop solution to all the problems for any type of navigation in the android app.
--   [Material Components for Android](https://github.com/material-components/material-components-android)  - Modular and customizable Material Design UI components for Android.## Switch to another file
+-   [Material Components for Android](https://github.com/material-components/material-components-android)  - Modular and customizable Material Design UI components for Android.
 
 
 ## Update
@@ -20,7 +20,7 @@ The 'master' branch uses Motion Layout for the transition effect, to do it progr
 
 ## Contact
 If you need any help, feel free to connect.
-[chintan.app](https://chintan.app)
+[chintan.app](https://chintanparmar.com)
 
 
 
